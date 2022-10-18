@@ -2,7 +2,7 @@
 
 AWS 試験ガイドからSAAの試験範囲のサービス一覧を記載する。
 
-[cols='20%,20%,50%,5%,5%',options="header"]
+[cols='20%,30%,40%,5%,5%',options="header"]
 // [%autowidth.stretch,options="header"]
 .AWS SAA の試験範囲のサービス一覧
 |===
