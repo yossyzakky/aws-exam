@@ -1,0 +1,682 @@
+= AWS SAA Services
+
+AWS 試験ガイドからSAAの試験範囲のサービス一覧を記載する。
+
+[%autowidth,options="header"]
+.AWS SAA の試験範囲のサービス一覧
+|===
+|Categories|ServiceName|Overview|SAA-C02|SAA-C03
+
+.11+s|Analytics
+|https://aws.amazon.com/jp/athena/[Amazon Athena]
+|Amazon Athena はインタラクティブなクエリサービスで、Amazon S3 内のデータを標準 SQL を使用して簡単に分析できます。Athena はサーバーレスなので、インフラストラクチャの管理は不要です。実行したクエリに対してのみ料金が発生します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/opensearch-service/[Amazon OpenSearch Service]
+|Amazon OpenSearch Service を使用すると、インタラクティブなログ分析、リアルタイムのアプリケーションモニタリング、ウェブサイト検索などを簡単に実行できます。OpenSearch は、Elasticsearch から派生したオープンソースの分散検索および分析スイートです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/emr/[Amazon EMR]
+|Amazon EMR とは、Apache Spark、Apache Hive、Presto などのオープンソースフレームワークを使用して、ペタバイトスケールのデータ処理、相互分析、機械学習を行なう業界をリードするクラウドビッグデータソリューションです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/kinesis/[Amazon Kinesis]
+|Amazon Kinesis でストリーミングデータをリアルタイムで収集、処理、分析することが簡単になるため、インサイトを適時に取得して新しい情報に迅速に対応できます。Amazon Kinesis は、アプリケーションの要件に最適なツールを柔軟に選択できるだけでなく、あらゆる規模のストリーミングデータをコスト効率良く処理するための主要機能を提供します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/msk/[Amazon Managed Streaming for Apache Kafka]
+|Amazon MSK では、フルマネージド Apache Kafka により、ストリーミングデータの取り込みと処理をリアルタイムで簡単に行うことができます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/quicksight/[Amazon QuickSight]
+|Amazon QuickSight を使用すれば、組織内のすべての人が自然言語で質問したり、インタラクティブなダッシュボードを探索したり、機械学習を利用したパターンや外れ値を自動的に探したりすることで、データを理解できます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/redshift/[Amazon Redshift]
+|Amazon Redshift は、SQL を使用して、データウェアハウス、運用データベース、データレイクにわたる構造化および半構造化データを分析し、AWS が設計したハードウェアと機械学習を使用して、あらゆる規模で最高の料金パフォーマンスを実現します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/data-exchange/[AWS Data Exchange]
+|クラウド内でのサードパーティーデータの容易な検索、購読、および使用
+^|
+^|○
+
+|https://aws.amazon.com/jp/datapipeline/[AWS Data Pipeline]
+|AWS Data Pipeline は、指定された間隔で、AWS のさまざまなコンピューティングサービスやストレージサービスのほか、オンプレミスのデータソース間で信頼性の高いデータ処理やデータ移動を行うことを支援するウェブサービスです。AWS Data Pipeline を使用すると、保存場所にあるお客様のデータに定期的にアクセスし、必要なスケールのリソースで変換と処理を行い、その結果を Amazon S3、Amazon RDS、Amazon DynamoDB、Amazon EMR のような AWS サービスに効率的に転送できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/glue/[AWS Glue]
+|AWS Glueは、分析、機械学習、アプリケーション開発のためのデータの検出、準備、結合を簡単に行える、サーバーレスデータ統合サービスです。 AWS Glue はデータ統合に必要なすべての機能を備えているため、数か月ではなく、数分でデータを分析し、使用可能にします。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/lake-formation/[AWS Lake Formation]
+|AWS Lake Formation は、安全なデータレイクを数日で簡単にセットアップできるサービスです。データレイクとは、キュレートされた安全な一元的リポジトリであり、すべてのデータが元の形式と分析用に処理された形式の両方で保存されます。データレイクを使用することにより、データのサイロ化が解消され、異なる種類の分析を組み合わせることが可能になります。このような分析から得られるインサイトは、ビジネス上の意思決定に大きく貢献します。
+^|
+^|○
+
+.7+|*Application Integration*
+|https://aws.amazon.com/jp/appflow/[Amazon AppFlow]
+|Amazon AppFlow は、Salesforce、SAP、Zendesk、Slack、および ServiceNow などの SaaS (Software-as-a-Service) アプリケーションと、Amazon S3 や Amazon Redshift などの AWS のサービスとの間で、たった数回のクリックでデータを安全に転送できるフルマネージド統合サービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/eventbridge/[Amazon EventBridge]
+|AWS、既存のシステム、または SaaS アプリケーション全体でイベント駆動型アプリケーションを大規模に構築する
+^|○
+^|○
+
+|https://aws.amazon.com/jp/amazon-mq/[Amazon MQ]
+|Amazon MQ は、AWS でメッセージブローカーの設定や運用を簡単に行えるようにしてくれる、 Apache ActiveMQ および RabbitMQ 向けのマネージド型メッセージブローカーサービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/sns/[Amazon Simple Notification Service]
+|Amazon Simple Notification Service (Amazon SNS) は、アプリケーション対アプリケーション（A2A）間と、アプリケーション対個人（A2P）間の両方の通信に使用できる、フルマネージド型メッセージングサービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/sqs/[Amazon Simple Queue Service]
+|Amazon Simple Queue Service (SQS) は、フルマネージド型のメッセージキューイングサービスで、マイクロサービス、分散システム、およびサーバーレスアプリケーションの切り離しとスケーリングが可能です。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/appsync/[AWS AppSync]
+|AWS AppSync は、最新のウェブおよびモバイルアプリケーションの構築を簡素化するサーバーレス GraphQL および Pub/Sub API のサービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/step-functions/[AWS Step Functions]
+|AWS Step Functions は、デベロッパーが分散アプリケーションの構築、IT およびビジネスプロセスの自動化、AWS のサービスを利用したデータと機械学習のパイプラインの構築に使用するローコードのビジュアルワークフローサービスです。
+^|
+^|○
+
+.4+|*AWS Cost Management*
+|https://aws.amazon.com/jp/aws-cost-management/aws-budgets/[AWS Budgets]
+|AWS Budgets では、カスタム予算を設定して、最も単純なものから最も複雑なものまで、ユースケースのコストと使用状況を追跡できます。また、AWS Budgets では、コストと使用状況が予算のしきい値を超過するか、超過しそうになった場合、もしくは、RI および Savings Plans の使用率やカバレッジがご希望のしきい値を下回った場合に、E メールや SNS で通知を受け取れるように設定できます。さらに、AWS Budget Actions では、アカウントにおけるコストや使用状況に対応するために特定のアクションを設定することが可能です。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/aws-cost-management/aws-cost-and-usage-reporting/[AWS Cost and Usage Report]
+|AWS Cost and Usage Reports (CUR) を使用すると、アカウントの最も包括的なコストと使用状況データを確認、項目化、および整理することができます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/aws-cost-management/aws-cost-explorer/[AWS Cost Explorer]
+|AWS Cost Explorer の使いやすいインターフェイスでは、AWS のコストと使用量の経時的変化を可視化し、理解しやすい状態で管理できます。すぐに使用開始し、カスタムレポートを作成してコストと使用量のデータを分析できます。大まかにデータを分析することや (例: すべてのアカウントの合計コストと使用量)、コストと使用量のデータを詳細に分析して傾向、コスト要因、異常を特定できます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/savingsplans/[Savings Plans]
+|Savings Plans は、1 年または 3 年の期間で特定の使用量 (USD/時間で測定) を契約するかわりに、オンデマンド料金と比較して低料金を実現する柔軟な料金モデルです。AWS は、Compute Savings Plans、EC2 Instance Savings Plans、Amazon SageMaker Savings Plans の 3 種類の Savings Plans を提供しています。Compute Savings Plans は、Amazon EC2、AWS Lambda、および AWS Fargate 全体の使用量に適用されます。EC2 Instance Savings Plans は EC2 の使用量に適用され、Amazon SageMaker Savings Plans は Amazon SageMaker の使用量に適用されます。AWS Cost Explorer で 1 年または 3 年の期間の Savings Plans に簡単にサインアップし、推奨事項、パフォーマンスレポート、および予算アラートを利用してプランを管理できます。
+^|
+^|○
+
+.8+|*Compute*
+|https://aws.amazon.com/jp/ec2/[Amazon EC2]
+|Amazon Elastic Compute Cloud (Amazon EC2) は、500 以上のインスタンスと、最新のプロセッサ、ストレージ、ネットワーク、オペレーティングシステム、購入モデルを選択でき、ワークロードのニーズに最適に対応できる、最も幅広く、最も深いコンピューティングプラットフォームを提供しています。私たちはインテル、AMD、Arm の各プロセッサに対応した初めての大手クラウドプロバイダーであり、オンデマンドの EC2 Mac インスタンスを備えた唯一のクラウドであり、400G bps のイーサネットネットワークを備えた唯一のクラウドです。機械学習のトレーニングでは最高のコストパフォーマンスを実現し、1 つの推論インスタンスあたりのコストもクラウドの中では最も低く抑えられています。他のどのクラウドよりも多くの SAP、ハイパフォーマンスコンピューティング (HPC) 、機械学習、および Windows のワークロードが AWS で実行されています。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/ec2/autoscaling/[Amazon EC2 Auto Scaling]
+|Amazon EC2 Auto Scaling はアプリケーションの可用性を維持するうえで役立ち、お客様が定義した条件に応じて EC2 インスタンスを自動的に追加または削除できます。EC2 Auto Scaling のフリート管理を使用して、フリートの状態と可用性を維持できます。また、EC2 Auto Scaling の動的スケーリング機能と予測スケーリング機能を使用して、EC2 インスタンスを追加または削除することもできます。動的スケーリングは需要の変更に対応し、予測スケーリングは需要予測に基づいて適切な数の EC2 インスタンスを自動的にスケジュールします。動的スケーリングと予測スケーリングを一緒に使用すると、迅速にスケールできます。 
+^|
+^|○
+
+|https://aws.amazon.com/jp/batch/[AWS Batch]
+|AWS Batch を使用することにより、開発者、科学者、エンジニアは、数十万件のバッチコンピューティングジョブを AWS で簡単かつ効率的に実行できます。AWS Batch では、コンピューティングリソース (CPU やメモリ最適化インスタンスなど) の最適な数量とタイプを、送信されたバッチジョブの量と具体的なリソース要件に基づいて動的にプロビジョニングします。
+^|
+^|○
+
+|https://aws.amazon.com/jp/elasticbeanstalk/[AWS Elastic Beanstalk]
+|AWS Elastic Beanstalk は、Java、.NET、PHP、Node.js、Python、Ruby、Go および Docker を使用して開発されたウェブアプリケーションやサービスを、Apache、Nginx、Passenger、IIS など使い慣れたサーバーでデプロイおよびスケーリングするための、使いやすいサービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/outposts/[AWS Outposts]
+|AWS Outposts は、フルマネージドソリューションのファミリーの 1 員であり、AWS インフラストラクチャとサービスを事実上すべてのオンプレミスまたはエッジロケーションに提供し、真に一貫したハイブリッドエクスペリエンスを実現します。 Outposts ソリューションを使用すると、オンプレミスで AWS のネイティブサービスを拡張および実行でき、1U および 2U Outposts サーバーから 42U Outposts ラック、および複数のラックデプロイまで、さまざまなフォームファクタで利用できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/serverless/serverlessrepo/[AWS Serverless Application Repository]
+|AWS Serverless Application Repository は、サーバーレスアプリケーション用のマネージド型リポジトリです。チーム、組織、開発者個人が、再利用可能なアプリケーションを保存して共有できます。また、強力な新しい方法でサーバーレスアーキテクチャを簡単に組み立ててデプロイすることもできます。Serverless Application Repository を使用すると、ソースコードのクローンを作成したり、ソースコードをビルドしてパッケージ化したり、デプロイする前に AWS に発行したりする必要はありません。
+^|
+^|○
+
+|https://aws.amazon.com/jp/wavelength/[AWS Wavelength]
+|AWS Wavelength は、AWS コンピューティングおよびストレージサービスを 5G ネットワーク内に組み込んで、超低レイテンシーアプリケーションの開発、デプロイおよびスケーリングのためのモバイルエッジコンピューティングインフラストラクチャを提供します。
+^|
+^|○
+
+|https://aws.amazon.com/jp/vmware/[VMware Cloud on AWS]
+|ソフトウェアのクリエイターである VMware と、パブリッククラウドのリーディングプロバイダーである AWS が、完全にサポートし、すぐに実行可能なサービスとして、コンピューティング、ネットワーク、ストレージの機能を組み合わせたマネージドサービスを提供し、ビジネスの変革目標を加速させます。
+^|
+^|○
+
+.6+|*Containers*
+|https://aws.amazon.com/jp/ecs/anywhere/[Amazon ECS Anywhere]
+|Amazon Elastic Container Service (ECS) Anywhere は、カスタマー管理のインフラストラクチャでコンテナのワークロードを簡単に実行および管理することを可能にする Amazon ECS の機能です。
+^|
+^|○
+
+|https://aws.amazon.com/jp/eks/eks-anywhere/[Amazon EKS Anywhere]
+|Amazon EKS Anywhere は、カスタマーマネージドインフラストラクチャで Kubernetes クラスターを作成および運用できるようにする、AWS がサポートする Amazon EKS のための新しいデプロイオプションです。お客様は現在、ベアメタルサーバーまたは VMware vSphere を使用して、独自のオンプレミスインフラストラクチャで Amazon EKS Anywhere を実行することができ、近い将来登場するより多くのデプロイターゲットもサポートされる予定です。
+^|
+^|○
+
+|https://aws.amazon.com/jp/eks/eks-distro/[Amazon EKS Distro]
+|Amazon EKS Distro は、AWS によって構築および保守され、Amazon Elastic Kubernetes Service (EKS) で使用される Kubernetes ディストリビューションで、信頼性と安全性の高いクラスターを簡単に作成できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/ecr/[Amazon Elastic Container Registry]
+|Amazon ECR は、ハイパフォーマンスホスティングを提供するフルマネージドコンテナレジストリであるため、アプリケーションイメージとアーティファクトをどこにでも確実にデプロイすることができます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/ecs/[Amazon Elastic Container Service]
+|Amazon ECS は、フルマネージドコンテナオーケストレーションサービスであり、コンテナ化されたアプリケーションを簡単にデプロイ、管理、およびスケーリングできます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/eks/[Amazon Elastic Kubernetes Service]
+|Amazon EKS は、AWS クラウドおよびオンプレミスデータセンターで Kubernetes を実行するためのマネージド Kubernetes サービスです。クラウドでは、Amazon EKS は、コンテナのスケジューリング、アプリケーションの可用性の管理、クラスターデータの保存などの主要タスクを担当する Kubernetes コントロールプレーンノードの可用性とスケーラビリティを自動的に管理します。
+^|○
+^|○
+
+.10+|*Database*
+|https://aws.amazon.com/jp/rds/aurora/[Amazon Aurora]
+|Amazon Aurora は、組み込みのセキュリティ、継続的なバックアップ、サーバーレスコンピューティング、最大 15 のリードレプリカ、自動化されたマルチリージョンレプリケーション、および他の AWS のサービスとの統合を提供します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/rds/aurora/serverless/[Amazon Aurora Serverless]
+|Amazon Aurora Serverless は、Amazon Aurora のオンデマンドの Auto Scaling 設定です。アプリケーションニーズに応じて、自動的に起動、シャットダウン、および容量をスケールアップまたはスケールダウンします。 データベース容量を管理することなく、AWS でデータベースを実行できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/documentdb/[Amazon DocumentDB]
+|Amazon DocumentDB は、ミッションクリティカルなMongoDB のワークロードを運用するための、スケーラブルかつ高い耐久性の、フルマネージドデータベースサービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/dynamodb/[Amazon DynamoDB]
+|Amazon DynamoDB は、ハイパフォーマンスなアプリケーションをあらゆる規模で実行するために設計された、フルマネージドでサーバーレスの key-value NoSQL データベースです。DynamoDB は、内蔵セキュリティ、継続的なバックアップ、自動化されたマルチリージョンでのレプリケーション、インメモリキャッシング、データのインポートとエクスポートツールを提供します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/elasticache/[Amazon ElastiCache]
+|Amazon ElastiCache は、柔軟なリアルタイムのユースケースをサポートするフルマネージドのインメモリキャッシングサービスです。ElastiCache は、アプリケーションとデータベースパフォーマンスを高速化するキャッシングに使ったり、セッションストア、ゲーミングリーダーボード、ストリーミング、および分析などの耐久性を必要としないユースケースのプライマリデータストアとして使用したりできます。ElastiCache は、Redis および Memcached と互換性があります。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/keyspaces/[Amazon Keyspaces (for Apache Cassandra)]
+|Amazon Keyspaces (Apache Cassandra 用) は、スケーラブルで可用性の高い、Apache Cassandra 互換のマネージドデータベースサービスです。Amazon Keyspaces では、現在使用しているのと同じ Cassandra アプリケーションコードとデベロッパーツールを使用して、AWS で Cassandra ワークロードを実行できます。サーバーをプロビジョニング、パッチ適用、または管理する必要はなく、ソフトウェアをインストール、保守、または運用する必要もありません。
+^|
+^|○
+
+|https://aws.amazon.com/jp/neptune/[Amazon Neptune]
+|Amazon Neptune は高速で信頼性が高いフルマネージド型のグラフデータベースサービスです。このサービスを使用すると、アプリケーションを簡単に構築および実行できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/qldb/[Amazon Quantum Ledger Database]
+|Amazon Quantum Ledger Database (QLDB) はフルマネージド型の台帳データベースです。透過的かつイミュータブルで、暗号的に検証可能なトランザクションログを備えています。
+^|
+^|○
+
+|https://aws.amazon.com/jp/rds/[Amazon RDS]
+|Amazon Relational Database Service (Amazon RDS) は、クラウド内でデータベースのセットアップ、運用、およびスケールを簡単に行うことのできるマネージド型サービスの集合体です。MySQL との互換性を持つ Amazon Aurora、PostgreSQL との互換性を持つ Amazon Aurora、MySQL、MariaDB、PostgreSQL、Oracle、SQL Server の 7 つの人気エンジンから選択し、Amazon RDS on AWS Outposts でオンプレミスデプロイが可能です。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/timestream/[Amazon Timestream]
+|Amazon Timestream は、IoT および運用アプリケーションに適した、高速かつスケーラブルなサーバーレス時系列データベースサービスです。リレーショナルデータベースの最大 1,000 倍の速度と 10 分の 1 のコストで、1 日あたり数兆ものイベントを、簡単に保存し、分析できます。Amazon Timestream では、最新データはメモリに保持し、履歴データはユーザー定義のポリシーに基づいてコスト最適化されたストレージ階層に移動することで、時系列データのライフサイクル管理に必要な時間とコストを節約できます。
+^|
+^|○
+
+|*Developer Tools*
+|https://aws.amazon.com/jp/xray/[AWS X-Ray]
+|開発者は、AWS X-Ray を使用して、本番環境や分散アプリケーション (マイクロサービスアーキテクチャを使用して構築されたアプリケーションなど) を分析およびデバッグできます。X-Ray を使用すると、アプリケーションやその基盤となるサービスの実行状況を把握し、パフォーマンスの問題やエラーの根本原因を特定して、トラブルシューティングを行えます。X
+^|
+^|○
+
+.4+|*Front-End Web and Mobile*
+|https://aws.amazon.com/jp/api-gateway/[Amazon API Gateway]
+|フルマネージド型サービスの Amazon API Gateway を利用すれば、デベロッパーは規模にかかわらず簡単に API の作成、公開、保守、モニタリング、保護を行えます。API は、アプリケーションがバックエンドサービスからのデータ、ビジネスロジック、機能にアクセスするための「フロントドア」として機能します。API Gateway を使用すれば、リアルタイム双方向通信アプリケーションを実現する RESTful API および WebSocket API を作成することができます。API Gateway は、コンテナ化されたサーバーレスのワークロードやウェブアプリケーションをサポートします。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/pinpoint/[Amazon Pinpoint]
+|Amazon Pinpoint は柔軟でスケーラブルなアウトバウンドおよびインバウンドマーケティングコミュニケーションサービスです。E メール、SMS、プッシュ、音声、アプリケーション内メッセージングなどのチャネルで顧客とつながることができます。 Amazon Pinpoint は簡単に設定でき、使いやすく、あらゆるマーケティングコミュニケーションシナリオに柔軟に対応します。
+^|
+^|○
+
+|https://aws.amazon.com/jp/amplify/[AWS Amplify]
+|AWS Amplify は、フロントエンドのウェブ/モバイルデベロッパーが AWS でフルスタックアプリケーションを簡単に構築、出荷、ホストできるようにする完全なソリューションであり、ユースケースの進化に合わせて幅広い AWS サービスを活用できる柔軟性を備えています。クラウドの専門知識は不要。
+^|
+^|○
+
+|https://aws.amazon.com/jp/device-farm/[AWS Device Farm]
+|AWS Device Farm は、広範なデスクトップブラウザと実際のモバイルデバイスでテストすることにより、ウェブアプリとモバイルアプリの品質を向上させるアプリケーションテストサービスです。 テストインフラストラクチャをプロビジョニングおよび管理する必要はありません。このサービスを使用すると、複数のデスクトップブラウザまたは実際のデバイスでテストを同時に実行して、テストスイートの実行を高速化し、ビデオとログを生成して、アプリの問題をすばやく特定できます。
+^|
+^|○
+
+.11+|+Machine Learning*
+|https://aws.amazon.com/jp/comprehend/[Amazon Comprehend]
+|Amazon Comprehend は、機械学習を使用して、テキストからインサイトや関係性を発見するための自然言語処理 (NLP) サービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/forecast/[Amazon Forecast]
+|Amazon Forecast は、機械学習 (ML) をベースにした時系列予測サービスで、ビジネスメトリクス分析のために構築されています。
+^|
+^|○
+
+|https://aws.amazon.com/jp/fraud-detector/[Amazon Fraud Detector]
+|Amazon Fraud Detector は、お客様が潜在的な不正行為を特定し、より多くのオンライン不正を迅速に発見することができるフルマネージドサービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/kendra/[Amazon Kendra]
+|Amazon Kendra は、機械学習 (ML) を利用したインテリジェント検索サービスです。Kendra を使用すると、ウェブサイトやアプリケーションのエンタープライズ検索に対する考えが変わります。お客様の従業員や顧客は、企業内の複数の場所やコンテンツリポジトリにコンテンツが分散して保存されている場合であっても、目的のコンテンツを簡単に見つけることができます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/lex/[Amazon Lex]
+|Amazon Lex は、アプリケーションに会話型インターフェイスを設計、構築、テスト、およびデプロイするための高度な自然言語モデルを備えた、フルマネージド型人工知能 (AI) サービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/polly/[Amazon Polly]
+|Amazon Polly は、文章をリアルな音声に変換するサービスです。テキスト読み上げができるアプリケーションを作成できるため、まったく新しいタイプの音声対応製品を構築できます。Polly は、高度なディープラーニング技術を使用したテキスト読み上げ (TTS) サービスで、自然に聞こえるように人間の音声を合成します。何十種類ものリアルな音声を多数の言語でサポートしているため、さまざまな国に対応した音声アプリケーションを構築できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/rekognition/[Amazon Rekognition]
+|Amazon Rekognition は、事前トレーニングされたカスタマイズ可能なコンピュータビジョン (CV) 機能を提供して、画像と動画から情報とインサイトを抽出します。
+^|
+^|○
+
+|https://aws.amazon.com/jp/sagemaker/[Amazon SageMaker]
+|フルマネージドインフラストラクチャ、ツール、ワークフローを使用して、あらゆるユースケース向けの機械学習 (ML) モデルを構築、トレーニング、デプロイします。
+^|
+^|○
+
+|https://aws.amazon.com/jp/textract/[Amazon Textract]
+|Amazon Textract は、スキャンしたドキュメントからテキスト、手書き文字、およびデータを自動的に抽出する機械学習 (ML) サービスです。これは、単純な光学文字認識 (OCR) のレベルにとどまらず、フォームやラベルからデータを識別、理解、および抽出します。
+^|
+^|○
+
+|https://aws.amazon.com/jp/transcribe/[Amazon Transcribe]
+|音声をテキストに自動的に変換する
+^|
+^|○
+
+|https://aws.amazon.com/jp/translate/[Amazon Translate]
+|Amazon Translate は、高速で高品質かつカスタマイズ可能な言語翻訳を手ごろな料金で提供するニューラル機械翻訳サービスです。ニューラル機械翻訳は、深層学習モデルを使用して、従来の統計ベースやルールベースの翻訳アルゴリズムよりも正確で自然な翻訳を提供する言語翻訳自動化の一形態です。
+^|
+^|○
+
+.19+|*Management and Governance*
+|https://aws.amazon.com/jp/cloudwatch/[Amazon CloudWatch]
+|Amazon CloudWatch は、DevOps エンジニア、デベロッパー、サイト信頼性エンジニア (SRE)、IT マネージャー、および製品所有者のために構築されたモニタリング/オブザーバビリティサービスです。CloudWatch は、アプリケーションをモニタリングし、システム全体におけるパフォーマンスの変化に対応して、リソース使用率の最適化を行うためのデータと実用的なインサイトを提供します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/grafana/[Amazon Managed Grafana]
+|Amazon Managed Grafana は、Grafana Labs と共同で開発したオープンソースの Grafana 向けのフルマネージドサービスです。 Grafana は、人気のあるオープンソース分析プラットフォームで、保存されている場所に関係なく、メトリクスのクエリ、可視化、アラートおよび理解を可能にします。
+^|
+^|○
+
+|https://aws.amazon.com/jp/prometheus/[Amazon Managed Service for Prometheus]
+|Amazon Managed Service for Prometheus は、Prometheus との互換性を持つモニタリングおよびアラートサービスです。このサービスにより、コンテナ化されたアプリケーションとインフラストラクチャの大規模なモニタリングを簡単に行えるようになります。
+^|
+^|○
+
+|https://aws.amazon.com/jp/autoscaling/[AWS Auto Scaling]
+|AWS Auto Scaling は、安定した予測可能なパフォーマンスを可能な限り低コストで維持するためにアプリケーションをモニタリングし、容量を自動で調整します。AWS Auto Scaling を使用すると、複数のサービスにまたがる複数のリソースのためのアプリケーションスケーリングを数分で簡単に設定できます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/cloudformation/[AWS CloudFormation]
+|AWS CloudFormation は、インフラストラクチャをコードとして扱うことで、AWS およびサードパーティーのリソースをモデル化、プロビジョニング、管理することができます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/cloudtrail/[AWS CloudTrail]
+|AWS CloudTrail は、AWS インフラストラクチャ全体のアカウントアクティビティをモニタリングして記録し、ストレージ、分析、および修復アクションをコントロールできます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/cli/[AWS Command Line Interface]
+|AWS コマンドラインインターフェイス (AWS CLI) は、AWS のサービスを管理するための統合ツールです。ダウンロードおよび設定用の単一のツールのみを使用して、コマンドラインから AWS の複数のサービスを制御し、スクリプトを使用してこれらを自動化することができます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/compute-optimizer/[AWS Compute Optimizer]
+|AWS Compute Optimizer はワークロードに最適な AWS リソースを推奨し、機械学習を使って過去の使用率メトリクスを分析することで、コストを削減し、パフォーマンスを向上します。リソースを過剰にプロビジョニングすると不要なインフラストラクチャのコストを生じさせる可能性があります。一方、リソースのプロビジョニングが不足すると、アプリケーションのパフォーマンスが低下する可能性があります。Compute Optimizer は、使用率データに基づいて、3 種類の AWS リソース (Amazon Elastic Compute Cloud (EC2) インスタンスタイプ、Amazon Elastic Block Store (EBS) ボリューム、および AWS Lambda 関数) について、最適な設定を選択するのに役立ちます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/config/[AWS Config]
+|AWS Config は、AWS リソースの設定を評価、監査、審査できるサービスです。Config では、AWS リソースの設定が継続的にモニタリングおよび記録され、望まれる設定に対する記録された設定の評価を自動的に実行できます。Config を使用すると、AWS リソース間の設定や関連性の変更を確認し、詳細なリソース設定履歴を調べ、社内ガイドラインで指定された設定に対する全体的なコンプライアンスを確認できます。これにより、コンプライアンス監査、セキュリティ分析、変更管理、運用上のトラブルシューティングを簡素化できます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/controltower/[AWS Control Tower]
+|AWS Control Tower は、ランディングゾーンと呼ばれる安全なマルチアカウント AWS 環境をセットアップおよび管理するための最も簡単な方法を提供します。AWS Organizations を使用してランディングゾーンを作成し、継続的なアカウント管理とガバナンス、およびクラウドに移行する数千のお客様と連携してきた AWS の経験に基づいた実装のベストプラクティスを提供します。
+^|
+^|○
+
+|https://aws.amazon.com/jp/license-manager/[AWS License Manager]
+|AWS License Manager は、Microsoft、SAP、Oracle、IBM といったベンダーが提供するライセンスの管理を、AWS とオンプレミス環境で簡単に行えるサービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/console/[AWS Management Console]
+|AWS クラウドにアクセスして管理するために必要なものすべてを 1 つのウェブインターフェイスに集結
+^|
+^|○
+
+|https://aws.amazon.com/jp/organizations/[AWS Organizations]
+|AWS Organizations は、AWS リソースの増加やスケーリングに合わせて、環境を一元的に管理し、統制するのに役立ちます。AWS Organizations を使って、プログラムから新しい AWS アカウントを作成しリソースを割り当てたり、アカウントをグループ化してワークフローを整理したり、ガバナンスのためにアカウントまたはグループにポリシーを適用したり、すべてのアカウントに単一の支払い方法を利用することで請求を簡素化したりできるようになります。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/premiumsupport/technology/personal-health-dashboard/[AWS Personal Health Dashboard]
+|AWS Personal Health Dashboard は、お客様の環境に影響を及ぼす可能性のある AWS イベントのアラートやガイダンスを提供します。Service Health Dashboard には AWS サービス全般のステータスが表示されますが、Personal Health Dashboard ではお客様の AWS 環境に関する明確な通知が事前に表示されます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/proton/[AWS Proton]
+|AWS Protonは、プラットフォームとDevOpsエンジニアが組織の俊敏性を実現するための、最新のアプリケーションのためのデプロイワークフローツールです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/servicecatalog/[AWS Service Catalog]
+|AWS Service Catalog では、AWS での使用が承認された IT サービスのカタログを作成および管理できます。この IT サービスには、仮想マシンイメージ、サーバー、ソフトウェア、データベース、さらに包括的な多層アプリケーションアーキテクチャまで、あらゆるものが含まれます。AWS Service Catalog により、デプロイ済みの IT サービスやアプリケーション、リソース、さらにメタデータを、一元的に管理できるようになります。一貫したガバナンスを実現して、コンプライアンス要件を満たすために役立ちます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/systems-manager/[AWS Systems Manager]
+|AWS Systems Manager は、ハイブリッドクラウド環境のための安全なエンドツーエンドの管理ソリューションです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/premiumsupport/technology/trusted-advisor/[AWS Trusted Advisor]
+|AWS Trusted Advisor は、お客様が AWS のベストプラクティスをフォローするためのレコメンデーションを提供いたします。Trusted Advisor は、チェックを使ってお客様のアカウントを評価します。これらのチェックは、お客様の AWS インフラストラクチャを最適化し、セキュリティとパフォーマンスを向上し、コストを削減し、サービスをモニタリングします。そしてレコメンデーションに従って、サービスやリソースを最適化することができます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/well-architected-tool/[AWS Well-Architected Tool]
+|AWS Well-Architected Tool は、アプリケーションとワークロードの状態を確認するために設計されており、アーキテクチャのベストプラクティスとガイダンスの中心的な場所を提供します。AWS Well-Architected Tool は、AWS Well-Architected Framework をベースとし、クラウドアーキテクトがアプリケーション向けに実装可能な、安全で高いパフォーマンス、障害耐性を備えた、効率的なインフラストラクチャの構築をサポートする目的で開発されました。このフレームワークは、AWS ソリューションアーキテクトによる何万ものワークロードレビューで使用されており、クラウドアーキテクチャを評価し、時間が経つにつれてアプリケーションのニーズに合わせて拡張できる設計を実装するための一貫したアプローチを提供します。
+^|
+^|○
+
+.2+|*Media Services*
+|https://aws.amazon.com/jp/elastictranscoder/[Amazon Elastic Transcoder]
+|Amazon Elastic Transcoder はクラウドのメディア変換サービスです。高度なスケーラビリティ、使いやすさ、高い費用効率性を実現する設計で、開発者や企業は、メディアファイルをその元のソース形式からスマートフォン、タブレット、PC などのデバイスで再生可能できるバージョンに変換 (または「トランスコード」) できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/kinesis/video-streams/[Amazon Kinesis Video Streams]
+|Amazon Kinesis Video Streams を使用すると、分析、機械学習 (ML)、再生、およびその他の処理のために、接続されたデバイスから AWS へ動画を簡単かつ安全にストリーミングできるようになります。Kinesis Video Streams は、数百万ものデバイスからの動画のストリーミングデータを取り込むために必要なすべてのインフラストラクチャを、自動的にプロビジョンして、伸縮自在にスケールします。
+^|
+^|○
+
+.9+|*Migration and Transfer*
+|https://aws.amazon.com/jp/application-discovery/[AWS Application Discovery Service]
+|AWS Application Discovery Service では、オンプレミスデータセンターに関する情報を収集することにより、エンタープライズのお客様の移行プロジェクト計画を支援しています。
+^|
+^|○
+
+|https://aws.amazon.com/jp/application-migration-service/[AWS Application Migration Service]
+|AWS Application Migration Service は、ソースサーバーを物理インフラストラクチャ、仮想インフラストラクチャ、およびクラウドインフラストラクチャから AWS でネイティブに実行するように自動的に変換することにより、時間のかかる、エラーが発生しやすい手動プロセスを最小限に抑えます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/dms/[AWS Database Migration Service]
+|AWS Database Migration Service (AWS DMS) は、データベースを AWS に迅速かつ安全に移行するのに役立ちます。移行中でもソースデータベースは完全に利用可能な状態に保たれ、データベースを利用するアプリケーションのダウンタイムは最小限に抑えられます。AWS Database Migration Service は、広く普及しているほとんどの商用データベースとオープンソースデータベース間のデータ移行でご利用いただけます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/datasync/[AWS DataSync]
+|AWS DataSync は、オンプレミスと AWS ストレージサービス間のデータ移動を自動化して加速化する安全なオンラインサービスです。DataSync は、Network File System (NFS) 共有、Server Message Block (SMB) 共有、Hadoop Distributed File System (HDFS)、セルフマネージドオブジェクトストレージ、AWS Snowcone、Amazon Simple Storage Service (Amazon S3) バケット、Amazon Elastic File System (Amazon EFS) ファイルシステム、Amazon FSx for Windows File Server ファイルシステム、Amazon FSx for Lustre ファイルシステム、Amazon FSz for OpenZFS ファイルシステム、そして Amazon FSx for NetApp ONTAP ファイルシステムとの間でデータをコピーできます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/migration-hub/[AWS Migration Hub]
+|Migration Hub は、AWS リージョンへの移行を追跡しながら、IT アセットのインベントリデータを保存するための場所を 1 か所提供します。移行後は Migration Hub を使用して、アプリケーションのネイティブ AWS への変換を加速します。 
+^|○
+^|○
+
+|https://aws.amazon.com/jp/server-migration-service/[AWS Server Migration Service]
+|AWS Application Migration Service (AWS MGN) は、AWS へのリフトアンドシフト移行に推奨される主要な移行サービスです。現在 Server Migration Service (SMS) を使用しているお客様には、将来の移行のために Application Migration Service に切り替えることをお勧めします。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/snow/[AWS Snow Family]
+|ペタバイト単位のデータをコスト効率よくオフラインで移動するための専用デバイス。Snow デバイスをリースして、データをクラウドに移動しましょう。
+^|
+^|○
+
+|https://aws.amazon.com/jp/aws-transfer-family/[AWS Transfer Family]
+|AWS Transfer Family は、SFTP、FTPS、FTP、AS2 プロトコルを使用して、AWS Storage サービスへの定期的な企業間ファイル転送を安全にスケールします。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/snowball/[AWS Snowball]
+|AWS Snow ファミリーコンソールで、Snowball Edge Compute Optimized または Snowball Edge Storage Optimized のいずれかを優先デバイスに選択します。Simple Storage Service (Amazon S3) バケットを使用してジョブを作成し、追跡用に Amazon Simple Notification Service (Amazon SNS) を選択して、Amazon EC2 AMI や GPU などのオプションを構成します。AWS がデバイスを用意して発送してから、約 4〜6 日で届きます。
+^|○
+^|
+
+.9+|*Networking and Content Delivery*
+|https://aws.amazon.com/jp/cloudfront/[Amazon CloudFront]
+|Amazon CloudFront は、高いパフォーマンス、セキュリティ、デベロッパーの利便性のために構築されたコンテンツ配信ネットワーク (CDN) サービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/route53/[Amazon Route 53]
+|Amazon Route 53 は、可用性と拡張性に優れたクラウドのドメインネームシステム (DNS) ウェブサービスです。Amazon Route 53 は、www.example.com のような名前を、コンピュータが互いに接続するための数字の IP アドレス (192.0.2.1 など) に変換するサービスで、デベロッパーや企業がエンドユーザーをインターネットアプリケーションにルーティングする、きわめて信頼性が高く、コスト効率の良い方法となるよう設計されています。Amazon Route 53 は IPv6 にも完全準拠しています。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/vpc/[Amazon VPC]
+|Amazon Virtual Private Cloud (Amazon VPC) では、リソースの配置、接続性、セキュリティなど、仮想ネットワーク環境をフルで制御することができます。AWS サービスコンソールで VPC を設定するところから始めます。次に、Amazon Elastic Compute Cloud (EC2) や Amazon Relational Database Service (RDS) インスタンスなどのリソースを追加します。最後に、アカウント、アベイラビリティーゾーン、AWS リージョンを超えて、VPC 同士の通信方法を定義します。以下の例では、各リージョン内の 2 つの VPC 間でネットワークトラフィックを共有しています。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/directconnect/[AWS Direct Connect]
+|AWS Direct Connect クラウドサービスは、AWS リソースにつながる最短のパスです。ネットワークトラフィックは転送中に AWS グローバルネットワークに残り、公開インターネットにアクセスすることはありません。これにより、ボトルネックにぶつかったり、予期しないレイテンシーが増加したりする可能性が低くなります。新しい接続を作成する際には、AWS Direct Connect デリバリパートナーが提供するホスト接続、または AWS の専用接続を選択することができ、世界中の 100 以上の AWS Direct Connect ロケーションでデプロイすることができます。AWS Direct Connect SiteLink を使用すれば、AWS Direct Connect ロケーションの間でデータを送信し、グローバルネットワーク内のオフィスとデータセンター間でプライベートネットワーク接続を作成できます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/global-accelerator/[AWS Global Accelerator]
+|AWS Global Accelerator は、Amazon Web Services のグローバルネットワークインフラを利用して、ユーザーのトラフィックのパフォーマンスを最大 60％ 向上させるネットワーキングサービスです。AWS Global Accelerator による、アプリケーションへのパスの最適化は、インターネットが混雑している場合にパケット損失、ジッター、レイテンシーを一貫して低く保つのに役立ちます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/privatelink/[AWS PrivateLink]
+|AWS PrivateLink は、トラフィックをパブリックインターネットに公開することなく、VPC、AWS のサービス、およびオンプレミスネットワーク間のプライベート接続を提供します。AWS PrivateLink を使用すると、さまざまなアカウントや VPC 間でサービスを簡単に接続して、ネットワークアーキテクチャを大幅に簡素化できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/transit-gateway/[AWS Transit Gateway]
+|AWS Transit Gateway は、Amazon Virtual Private Cloud (VPC) とオンプレミスネットワークを中央ハブで接続します。これにより、ネットワークが簡素化され、複雑なピア接続関係がなくなります。クラウドルーターとして機能 – 新しい接続はそれぞれ 1 回だけ行われます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/vpn/[AWS VPN]
+|AWS Virtual Private Network ソリューションは、オンプレミスネットワーク、リモートオフィス、クライアントデバイス、および AWS グローバルネットワーク間に安全な接続を確立します。AWS VPN は、AWS サイト間 VPN と AWS Client VPN で構成されています。これらを組み合わせることで、ネットワークトラフィックを保護する、高可用性かつ柔軟なマネージドクラウド VPN ソリューションを提供します。
+^|
+^|○
+
+|https://aws.amazon.com/jp/elasticloadbalancing/[Elastic Load Balancing]
+|ELB (Elastic Load Balancing) は、アプリケーションへのトラフィックを、1 つまたは複数のアベイラビリティーゾーン (AZ) 内の複数のターゲットおよび仮想アプライアンスに自動的に分散します。
+^|○
+^|○
+
+.20+|*Security, Identity, and Compliance*
+|https://aws.amazon.com/jp/cognito/[Amazon Cognito]
+|Amazon Cognito を使用すれば、ウェブアプリケーションおよびモバイルアプリに素早く簡単にユーザーのサインアップ/サインインおよびアクセスコントロールの機能を追加できます。Amazon Cognito は、数百万人のユーザーにスケールし、Apple、Facebook、Google、Amazon などのソーシャル ID プロバイダー、SAML 2.0 および OpenID Connect によるエンタープライズ ID プロバイダーを使用したサインインをサポートします。 
+^|
+^|○
+
+|https://aws.amazon.com/jp/detective/[Amazon Detective]
+|Amazon Detective は、調査プロセスを簡素化し、セキュリティ チームがより迅速かつ効果的な調査を行うのに役立ちます。Amazon Detective の事前構築済みのデータ集計、要約、およびコンテキストを使用すると、考えられるセキュリティ問題の性質と範囲をすばやく分析して判断できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/guardduty/[Amazon GuardDuty]
+|Amazon GuardDuty は、悪意のあるアクティビティのために AWS アカウントとワークロードを継続的にモニタリングし、可視化と修復のための詳細なセキュリティ調査結果を提供する脅威検出サービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/inspector/[Amazon Inspector]
+|Amazon Inspector は、ソフトウェアの脆弱性や意図しないネットワークのエクスポージャーがないか継続的に AWS ワークロードをスキャンする自動脆弱性管理サービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/macie/[Amazon Macie]
+|Amazon Macie は、機械学習とパターンマッチングを使用して AWS の機密データを検出して保護する、フルマネージドのデータセキュリティとデータプライバシーのサービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/artifact/[AWS Artifact]
+|AWS Artifact は、重要なコンプライアンス関連情報の頼りになる一元管理型のリソースです。AWS Artifact では、AWS のセキュリティおよびコンプライアンスレポートと特定のオンライン契約にオンデマンドでアクセスできます。AWS Artifact には、Service Organization Control (SOC)、Payment Card Industry (PCI) レポート、AWS セキュリティ制御の実装と運用の有効性を検証する、さまざまな地域やコンプライアンス垂直市場の認定機関からの認定が含まれます。AWS Artifact で利用可能な契約には、事業提携契約 (BAA) と機密保持契約 (NDA) が含まれます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/audit-manager/[AWS Audit Manager]
+|AWS Audit Manager は、AWS の使用状況を継続的に監査して、リスクの評価方法と規制や業界標準への準拠を簡素化する際に役立ちます。Audit Manager は、証拠収集を自動化して、監査で頻繁に発生する「全力投球」の手作業を削減し、ビジネスが成長するにつれてクラウドでの監査機能を拡張できるようにします。Audit Manager を使用すると、ポリシー、手順、および活動 (コントロールとも呼ばれる) が効果的に機能しているかどうかを簡単に評価できます。監査シーズンになると、AWS Audit Manager を使用して、コントロールの利害関係者によるレビューを管理し、手動作業を大幅に減らして監査に対応するためのレポートを作成できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/certificate-manager/[AWS Certificate Manager]
+|AWS Certificate Manager (ACM) は、AWS のサービスとお客様の内部接続リソースで使用するパブリックとプライベートの Secure Sockets Layer/Transport Layer Security (SSL/TLS) 証明書のプロビジョニング、管理、デプロイを簡単にします。 SSL/TLS 証明書は、ネットワーク通信を保護し、プライベートネットワークのリソースと同様にインターネットで Wウェブサイトのアイデンティティを確立するために使用されます。AWS Certificate Manager を使用すれば、SSL/TLS 証明書の購入、アップロード、更新という時間のかかるプロセスを手動で行う必要がなくなります。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/cloudhsm/[AWS CloudHSM]
+|AWS CloudHSM は、クラウドベースのハードウェアセキュリティモジュール (HSM) です。これにより、AWS クラウドで暗号化キーを簡単に生成して使用できるようになります。CloudHSM で、FIPS 140-2 のレベル 3 認証済みの HSM を使用して、暗号化キーを管理できます。CloudHSM によって、PKCS#11、Java Cryptography Extensions (JCE)、Microsoft CryptoNG (CNG) ライブラリといった業界標準の API を使用して、アプリケーションを柔軟に統合できます。
+^|
+^|○
+
+|https://aws.amazon.com/jp/directoryservice/[AWS Directory Service]
+|AWS Managed Microsoft Active Directory (AD) とも呼ばれる AWS Directory Service for Microsoft Active Directory は、ディレクトリ対応型ワークロードと AWS リソースがAWS 内のマネージド型 Active Directory (AD) を使用することを可能にします。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/firewall-manager/[AWS Firewall Manager]
+|AWS Firewall Manager は、AWS Organizations にあるアカウントとアプリケーション全体で一元的にファイアウォールのルールを設定、管理できるようにするセキュリティ管理サービスです。新規アプリケーションが作成されると、Firewall Manager はセキュリティルールの共通セットを適用することで、新規アプリケーションとリソースを簡単にこれらに準拠させることができます。このように、中央の管理者アカウントから、ファイアウォールルールを構築し、セキュリティポリシーを作成して、インフラストラクチャ全体にわたって一貫した階層的な方法でそれらを適用する単一のサービスが利用可能になりました。
+^|
+^|○
+
+|https://aws.amazon.com/jp/iam/[AWS Identity and Access Management]
+|AWS Identity and Access Management (IAM) を使用すると、AWS のサービスやリソースにアクセスできるユーザーやグループを指定し、きめ細かいアクセス許可を一元管理し、アクセスを分析して AWS 全体でアクセス許可を改善することができます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/kms/[AWS Key Management Service]
+|AWS Key Management Service (AWS KMS) は、アプリケーションと 100 以上の AWS のサービスにわたって暗号キーを作成、管理、制御することができます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/network-firewall/[AWS Network Firewall]
+|AWS Network Firewall は、すべての Amazon Virtual Private Cloud (VPC) に不可欠なネットワーク保護を簡単にデプロイできるようにするマネージドサービスです。このサービスは、数回クリックするだけでセットアップでき、ネットワークトラフィックに合わせて自動的に拡張されるため、インフラストラクチャのデプロイと管理について心配する必要はありません。AWS Network Firewall の柔軟なルールエンジンを使用すると、アウトバウンドサーバーメッセージブロック (SMB) リクエストをブロックして悪意のあるアクティビティの拡散を防ぐなど、ネットワークトラフィックを詳細まで制御できるファイアウォールルールを定義できます。また、一般的なオープンソースルール形式で既に作成したルールをインポートして、AWS パートナーが提供するマネージドインテリジェンスフィードを統合することも可能です。AWS Network Firewall は AWS Firewall Manager と連携するため、AWS Network Firewall ルールに基づいてポリシーを構築し、それらのポリシーを VPC とアカウント全体に一元的に適用できます
+^|
+^|○
+
+|https://aws.amazon.com/jp/ram/[AWS Resource Access Manager]
+|AWS Resource Access Manager (RAM) は、組織内の AWS アカウント間または AWS Organizations 内の組織単位 (OU) 間で、ならびにサポートされているリソースタイプの IAM ロールおよび IAM ユーザーとの間で、リソースを安全に共有するのに役立ちます。AWS RAM を使用して、トランジットゲートウェイ、サブネット、AWS License Manager ライセンス設定、Amazon Route 53 Resolver ルール、およびその他のリソースタイプを共有できます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/secrets-manager/[AWS Secrets Manager]
+|AWS Secrets Manager は、アプリケーション、サービス、IT リソースへのアクセスに必要なシークレットの保護を支援します。このサービスは、データベースの認証情報、API キー、その他のシークレットをそのライフサイクルを通して容易にローテーション、管理、取得できるようにします。ユーザーとアプリケーションは、Secrets Manager API を呼び出してシークレットを取得しますので、秘密情報をプレーンテキストでコードに書き込む必要がなくなります。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/security-hub/[AWS Security Hub]
+|AWS Security Hub は、セキュリティのベストプラクティスのチェックを行い、アラートを集約し、自動修復を可能にするクラウドセキュリティ体制管理サービスです。
+^|
+^|○
+
+|https://aws.amazon.com/jp/shield/[AWS Shield]
+|AWS Shield はマネージド型の分散サービス妨害 (DDoS) に対する保護サービスで、AWS で実行しているアプリケーションを保護します。AWS Shield ではアプリケーションのダウンタイムとレイテンシーを最小限に抑える常時稼働の検出と自動インライン緩和策を提供しているため、DDoS 保護のメリットを受けるために AWS サポートに依頼する必要はありません。AWS Shield にはスタンダードとアドバンストの 2 つの階層があります。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/iam/identity-center/[AWS Single Sign-On]
+|AWS IAM アイデンティティセンター（AWS Single Sign-On の後継）は、ワークフォースのアイデンティティを安全に作成または接続し、AWSアカウントとアプリケーション全体でそのアクセスを一元管理することを支援します。IAM アイデンティティセンターは、規模や種類を問わず、AWS におけるワークフォースの認証と認可のための推奨されるアプローチです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/waf/[AWS WAF]
+|AWS WAF は、可用性、セキュリティ侵害、リソースの過剰消費に影響を与えるような、ウェブの脆弱性を利用した一般的な攻撃やボットから、ウェブアプリケーションまたは API を保護するウェブアプリケーションファイアウォールです。AWS WAF では、ボットのトラフィックを制御し、SQL インジェクションやクロスサイトスクリプティングなどの一般的な攻撃パターンをブロックするセキュリティルールを作成できるため、トラフィックがアプリケーションに到達する方法を制御できます。
+^|○
+^|○
+
+.2+|*Serverless*
+|https://aws.amazon.com/jp/fargate/[AWS Fargate]
+|AWS Fargate は、サーバーレスで従量制料金のコンピューティングエンジンであり、サーバーを管理することなくアプリケーションの構築に集中することができます。AWS Fargate は、Amazon Elastic Container Service (ECS) と Amazon Elastic Kubernetes Service (EKS) の両方に対応しています。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/lambda/[AWS Lambda]
+|AWS Lambda は、サーバーレスでイベント駆動型のコンピューティングサービスであり、サーバーのプロビジョニングや管理をすることなく、事実上あらゆるタイプのアプリケーションやバックエンドサービスのコードを実行することができます。200 以上の AWS のサービスやサービス型ソフトウェア (SaaS) アプリケーションから Lambda をトリガーすることができ、使用した分だけお支払いいただきます。
+^|○
+^|○
+
+.7+|*Storage*
+|https://aws.amazon.com/jp/ebs/[Amazon Elastic Block Store]
+|Amazon Elastic Block Store (Amazon EBS) は、Amazon Elastic Compute Cloud (Amazon EC2) 向けに設計された、使いやすく、スケーラブルで、高性能なブロックストレージサービスです。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/efs/[Amazon Elastic File System]
+|Amazon Elastic File System (Amazon EFS) は、管理やプロビジョニングを必要とせず、ファイルの追加や削除に応じて自動的に成長、縮小します。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/fsx/[Amazon FSx]
+|Amazon FSx は、機能豊富で高性能なファイルシステムのクラウド上での起動、実行およびスケーリングを簡単かつコスト効率の高いものにします。信頼性、セキュリティ、スケーラビリティ、幅広い機能を備え、さまざまなワークロードをサポートします。Amazon FSx は、AWS の最新のコンピューティング、ネットワーク、ディスク技術をベースに構築されており、高いパフォーマンスと低い TCO を実現します。また、フルマネージドサービスとして、ハードウェアのプロビジョニング、パッチ適用、バックアップを行いますので、お客様は、アプリケーション、エンドユーザー、ビジネスに専念することができます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/s3/[Amazon S3]
+|Amazon Simple Storage Service (Amazon S3) は、業界をリードするスケーラビリティ、データ可用性、セキュリティ、およびパフォーマンスを提供するオブジェクトストレージサービスです。あらゆる規模や業種のお客様が、データレイク、クラウドネイティブアプリケーション、モバイルアプリケーションなど、事実上あらゆるユースケースで、あらゆる量のデータを保存、保護することができます。コストパフォーマンスに優れたストレージクラスと使いやすい管理機能により、コストの最適化、データの整理、特定のビジネス、組織、コンプライアンスの要件を満たすきめ細かなアクセスコントロールの設定を行うことができます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/s3/storage-classes/glacier/[Amazon S3 Glacier]
+|Amazon S3 Glacier ストレージクラス は、データアーカイブ専用に設計されており、クラウドで最高のパフォーマンス、最高の検索の柔軟性、最低のコストのアーカイブストレージを提供します。すべての S3 Glacier ストレージクラスは、事実上無制限のスケーラビリティを提供し、データの耐久性が 99.999999999% (11 ナイン) を実現できるように設計されています。S3 Glacier ストレージクラスは、アーカイブデータへの最速のアクセスとクラウド内の最低コストのアーカイブストレージのためのオプションをもたらします。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/backup/[AWS Backup]
+|AWS Backup を使用して、AWS のサービスとハイブリッドワークロード全体でデータ保護を一元化および自動化できます。AWS Backup は、費用効果が高く、ポリシーベースのフルマネージドサービスを提供し、大規模なデータ保護をさらに簡素化します。また、AWS Backup は、データ保護に関する規制コンプライアンスやビジネスポリシーのサポートにも役立ちます。
+^|○
+^|○
+
+|https://aws.amazon.com/jp/storagegateway/[AWS Storage Gateway]
+|AWS Storage Gateway は、事実上無制限のクラウドストレージへのオンプレミスアクセスを提供する一連のハイブリッドクラウドストレージサービスです。
+^|○
+^|○
+
+s|Total
+|
+|
+^|62
+^|129
+
+|===
